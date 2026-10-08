@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalender</title>
-
+    <title>Reddit</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
 </head>
 <body>
+    <header>
+        <span class="logo">reddit</span>
+        <input type="search" placeholder="Search Reddit">
+        <button class="create">+ Create</button>
+    </header>
 
-    <main class="calender">
+    <main>
+        <article class="post">
+            <div class="post-top">
+                <img class="sub-icon" src="https://picsum.photos/id/10/50/50" alt="">
+                <span class="sub-name">r/pdiddy</span>
+                <span class="time">· 2 hr. ago</span>
+                <button class="join">Join</button>
+            </div>
 
-        <header class="header">
-            <button class="navbutton" id="prev">prev</button>
-            <h2>AD CALANDA</h2>
-            <h2 id="date">July 2025</h2>
-            <button class="navbutton" id="next">next</button>
-        </header>
+            <div class="post-body">
+                <div class="post-text">
+                    <h2>P. Diddy got released out of prison</h2>
+                    <p>Sean Combs, ook bekend als Puff Daddy en Diddy, werd geboren in 1969 in New York. Hij richtte in de jaren negentig Bad Boy Records op en werkte als producer en artiest samen met grote namen uit de hiphop en R&B. Naast muziek bouwde hij ook een imperium op met kleding, drank en media.</p>
+                </div>
+                <img class="thumb" src="https://picsum.photos/id/1011/300/200" alt="">
+            </div>
 
-        <ol class="weekdays">
-            <li class="weekday">MA</li>
-            <li class="weekday">DI</li>
-            <li class="weekday">WO</li>
-            <li class="weekday">DO</li>
-            <li class="weekday">VR</li>
-            <li class="weekday">ZA</li>
-            <li class="weekday">ZO</li>
-        </ol>
-
-        <ol id="days" class="days">
-        </ol>
-
+            <div class="post-buttons">
+                <button class="pill">⬆ 10.6K ⬇</button>
+                <button class="pill">💬 6767</button>
+                <button class="pill">🏅 1</button>
+                <button class="pill">➦ Share</button>
+            </div>
+        </article>
     </main>
-
 </body>
 </html>

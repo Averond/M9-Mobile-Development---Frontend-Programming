@@ -1,54 +1,127 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-.calender{
-    width: 700px;
-    margin: 20px auto;
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: Arial, sans-serif;
+    background: #0b1416;
+    color: #eef1f3;
 }
 
-.header{
-    display: grid;
-    grid-template-columns: 1fr 300px 1fr;
-    margin-bottom: 20px;
+/* header (minimaal) */
+header {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #2a3236;
+}
+.logo {
+    color: #ff4500;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+header input {
+    flex: 1;
+    padding: 1rem 1.6rem;
+    border-radius: 99rem;
+    border: none;
+    background: #2a3236;
+    color: #fff;
+}
+.create {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
 }
 
-.header h2{
-    text-align: center;
+/* post */
+main {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.post {
+    padding: 1.2rem 1.6rem;
+    border-radius: 1.6rem;
+}
+.post:hover {
+    background: #131f23;
 }
 
-.navbutton{
-    padding: 5px;
+.post-top {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
-
-.weekdays{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    list-style: none;
-    text-align: center;
-    margin-bottom: 5px;
+.sub-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
 }
-
-.weekday{
+.sub-name {
     font-weight: bold;
 }
-
-.days{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    list-style: none;
+.time {
+    color: #8ba2ad;
+}
+.join {
+    margin-left: auto;
+    background: #0045ac;
+    color: #fff;
+    border: none;
+    border-radius: 99rem;
+    padding: 0.6rem 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.day{
-    aspect-ratio: 4/3;
-    margin: 2px;
-    border-radius: 5px;
-    background: linear-gradient(135deg, #000000 0%, #fa08e2 100%);
+.post-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+.post-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+.post-text a {
+    color: #5c9aff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    word-break: break-all;
+}
+.thumb {
+    width: 14rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 1.2rem;
+    flex-shrink: 0;
 }
 
-
-.empty{
-    aspect-ratio: 3/2;
+.post-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.4rem;
+}
+.pill {
+    background: #2a3236;
+    color: #eef1f3;
+    border: none;
+    border-radius: 99rem;
+    padding: 0.8rem 1.4rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.pill:hover {
+    background: #3a444a;
 }
