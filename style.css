@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calender{
+    width: 700px;
+    margin: 20px auto;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    margin-bottom: 20px;
+}
+
+.header h2{
+    text-align: center;
+}
+
+.navbutton{
+    padding: 5px;
+}
+
+.weekdays{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.weekday{
+    font-weight: bold;
+}
+
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+}
+
+.day{
+    aspect-ratio: 4/3;
+    margin: 2px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #000000 0%, #fa08e2 100%);
+}
+
+
+.empty{
+    aspect-ratio: 3/2;
+}
